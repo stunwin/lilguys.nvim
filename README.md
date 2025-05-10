@@ -2,7 +2,7 @@
 
 Sometimes you just need to add a lil guy to the line!
 
-This plugin allows you to easily insert a symbol like `|>` at the start or cursor location of a line in supported filetypes.
+This plugin provides you with a keybind to easily toggle a symbol like `|>` before the content of a line.
 
 I made it because typing `|>` on my keyboard is moderately inconvenient, but also because I've never made a real plugin before.
 
