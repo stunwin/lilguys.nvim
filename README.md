@@ -2,6 +2,8 @@
 
 Sometimes you just need to add a lil guy to the line!
 
+![lilguys](https://s4.gifyu.com/images/bLJaL.gif)
+
 This plugin provides you with a keybind to easily toggle a symbol like `|>` before the content of a line.
 
 I made it because typing `|>` on my keyboard is moderately inconvenient, but also because I've never made a real plugin before.
