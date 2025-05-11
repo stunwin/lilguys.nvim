@@ -34,17 +34,19 @@ M.insert_at_start = function()
 
 	-- Determine the selected line range
 	local start_line = vim.fn.line(".")
-	local end_line = vim.fn.line("v")
 	local count = vim.v.count
+	local end_line
+
+	if count > 0 and vim.fn.mode() == "n" then
+		end_line = start_line + count - 1
+	else
+		end_line = vim.fn.line("v")
+		if start_line > end_line then
+			start_line, end_line = end_line, start_line
+		end
+	end
 
 	-- flip orientation if selection is going up
-	if start_line > end_line then
-		start_line, end_line = end_line, start_line
-	end
-
-	if count ~= nil and vim.fn.mode() == "n" then
-		end_line = start_line + count - 1
-	end
 
 	for line_num = start_line, end_line do
 		guy_added = false
