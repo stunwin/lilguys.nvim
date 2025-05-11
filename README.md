@@ -10,8 +10,8 @@ I made it because typing `|>` on my keyboard is moderately inconvenient, but als
 
 ## ✨ Features
 
-- Toggle lil guy (`|>`) at the start of the line (supports multi-line selections!)
-- Insert lil guy at cursor
+- Toggle lil guy (`|>`) at the start of the line (supports multi-line selections and motion counts)
+- Insert lil guy at cursor (supports `.` repetition)
 - Filetype-sensitive activation
 - Configurable keymaps and symbol
 
@@ -58,9 +58,9 @@ opts = {
 
 ## todo
 
+- [x] Add support for motion-count iteration
 - [ ] Set per-filetype lil guys
 - [ ] Three-way toggle between start of line, at-cursor, and off states
-- [ ] record some lil gifs of product in action
 - [ ] Support for massive concurrency and cloud deployment
 - [ ] finish this and probably get back to real work
 
